@@ -62,7 +62,10 @@ Fizemos o intermediário de autenticação do usuário.
 # Cadastrar animais:
 ## Tempo: 1min segunda gravação
 ## Descrição
+Fizemos o cadastro dos animais. Usamos o `multer` para conseguir reconhecer a imagem e o `aws-sdk` para salvar no bucket (usamos o serviço da Back Blaze).
 ## Tecnologias e serviços
+- `npm install multer`: colocar o `multer` como intermediário. Ele vai "quebrar" a requisição em duas partas: `req.body` com os campos de texto e `req.file` com a imagem.
+- `npm i aws-sdk`: configurar com os dados de autenticação gerados na Back Blaze.
 
 # Recapitulando
 ## Tempo: 53 min segunda gravação
